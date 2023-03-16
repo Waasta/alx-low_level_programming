@@ -10,8 +10,9 @@
 int main(void)
 {
 	/*code*/
-      	const char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(STDERR_FILENO, msg, 52);
+	write(STDERR_FILENO,
+      "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+      52);
 	return 1;
 }
 

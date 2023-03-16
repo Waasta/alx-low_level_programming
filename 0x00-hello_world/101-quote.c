@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+#include <unistd.h>
 
 /**
  * main - Entry point
@@ -8,8 +9,9 @@
 
 int main(void)
 {
-	/* Your code here */
-	fwrite(2,
-	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-	return (1);
+	/*code*/
+      	const char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(STDERR_FILENO, msg, 52);
+	return 1;
 }
+
